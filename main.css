@@ -1,0 +1,55 @@
+@font-face { font-family: monobold; src: url('./fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf'); }
+@font-face { font-family: monoregular; src: url('./fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf'); }
+
+a, a:hover {
+ color:black;
+}
+
+body {
+overflow-x:hidden;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand.abs {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}
+.title{
+    font-family:monobold;
+}
+
+.subtitle{
+    font-family:monoregular;
+}
+
+.homepage-projects{
+    margin-bottom:3em;
+    margin-top:3em;
+}
+
+.project {
+    font-family:monoregular;
+}
+
+.navbar-brand {
+    font-family:monobold;
+}
+
+.navbar {
+    margin-bottom:3em;
+    font-family:monoregular;
+}
+
+.pagetitle {
+    margin-bottom:3em;
+    margin-top:3em;
+}
+
+div.centerH {
+ text-align: center;
+}
+
+
