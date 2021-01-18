@@ -50,6 +50,10 @@ overflow-x:hidden;
     margin-top:3em;
 }
 
+.centerV {
+    vertical-align:middle;
+}
+
 div.centerH {
  text-align: center;
 }
