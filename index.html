@@ -45,13 +45,6 @@
 
 
 <script>
-     window.inload = function() {
-         document.getElementById('homepagetitle').className = 'vertical-center';
-     };
-</script>
-
-
-<script>
     $(document).ready(function() {
         setInterval(function() {
             var docHeight = $(window).height();
@@ -60,7 +53,8 @@
             var marginTop = (docHeight - footerTop + 0);
 
             if (footerTop < docHeight)
-                $('#footer-placeholder').css('margin-top', marginTop + 'px'); // padding of 30 on footer
+                $('#homepagetitle').css('margin-top', marginTop/2 + 'px'); // padding of 30 on footer
+                $('#homepagetitle').css('margin-bottom', marginTop/2 + 'px');
             else
                 $('#footer-placeholder').css('margin-top', '0px');
             // console.log("docheight: " + docHeight + "\n" + "footerheight: " + footerHeight + "\n" + "footertop: " + footerTop + "\n" + "new docheight: " + $(window).height() + "\n" + "margintop: " + marginTop);
