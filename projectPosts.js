@@ -2,7 +2,7 @@ function makeList() {
     // Establish the array which acts as a data source for the list
     let listData = [
         ['project1.html','CNC with Arduino (Python, C++)','images/image-placeholder.png'],
-        ['project2.html','Earth2 Bot using Selenium (Java)','images/image-placeholder.png'],
+        ['project2.html','Earth2 Bot using Selenium (Java)','images/earth2logo.png'],
         ['project3.html','Personal Website (JavaScript, HTML, CSS)','images/image-placeholder.png'],
         ['project4.html','Traxus Webapp (Java, PHP, HTML, CSS)','images/image-placeholder.png'],
         ['project5.html','Blackjack (Java)','images/image-placeholder.png']
