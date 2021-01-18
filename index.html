@@ -14,10 +14,9 @@
 </head>
     
 <body>
-<div class="vertical-center">
     <div id="nav-placeholder"></div>
 
-    <div class="row">
+    <div class="row" id="homepagetitle">
         <div class="col-md-12 pagetitle">
             <div class="centerH title">
                 <h1>{"Maxim", "Stockmans"}</h1>
@@ -30,7 +29,6 @@
 
 
     <div id="footer-placeholder"></div>
-</div>
 
 <script>
     $(document).ready(function() {
@@ -63,6 +61,11 @@
     });
 </script>
 
+<script>
+    window.inload = function() {
+        document.getElementById('').className = 'homepagetitle';
+    };
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
