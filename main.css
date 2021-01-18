@@ -60,8 +60,8 @@ overflow-x:hidden;
 }
 
 .vertical-center {
-  min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 80vh; /* These two lines are counted as one :-)       */
+  min-height: calc(100%-56px-240px);  /* Fallback for browsers do NOT support vh unit */
+  min-height: calc(100vh-56px-240px); /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
