@@ -17,7 +17,7 @@
 <body>
     <div id="nav-placeholder"></div>
 
-    <div class="row vertical-center" id="homepagetitle">
+    <div class="row" id="homepagetitle">
         <div class="col-md-12 pagetitle">
             <div class="centerH title">
                 <h1>{"Maxim", "Stockmans"}</h1>
@@ -43,6 +43,24 @@
     $('#footer-placeholder').load("footer.html");
 });
 </script>
+
+
+<script>
+    $(document).ready(function() {
+        setInterval(function() {
+            var docHeight = $(window).height();
+            var footerHeight = $('#footer-placeholder').outerHeight();
+            var footerTop = $('#footer-placeholder').position().top + footerHeight;
+            var marginTop = (docHeight - footerTop + 0);
+
+            if (footerTop < docHeight)
+                $('#footer-placeholder').css('margin-top', marginTop + 'px');
+            else
+                $('#footer-placeholder').css('margin-top', '0px');
+        }, 250);
+    });
+</script>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
