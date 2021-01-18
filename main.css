@@ -32,6 +32,8 @@ overflow-x:hidden;
 
 .project {
     font-family:monoregular;
+    margin-bottom:3em;
+    margin-top:3em;
 }
 
 .navbar-brand {
