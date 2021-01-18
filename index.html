@@ -53,8 +53,7 @@
             var marginTop = (docHeight - footerTop + 0);
 
             if (footerTop < docHeight)
-                $('#homepagetitle').css('margin-top', marginTop/2 + 'px'); // padding of 30 on footer
-                $('#homepagetitle').css('margin-bottom', marginTop/2 + 'px');
+                $('#footer-placeholder').css('margin-top', marginTop + 'px'); // padding of 30 on footer
             else
                 $('#footer-placeholder').css('margin-top', '0px');
             // console.log("docheight: " + docHeight + "\n" + "footerheight: " + footerHeight + "\n" + "footertop: " + footerTop + "\n" + "new docheight: " + $(window).height() + "\n" + "margintop: " + marginTop);
@@ -62,6 +61,10 @@
     });
 </script>
 
+
+<script>
+    $('#homepagetitle'}.css('margin','auto');
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
