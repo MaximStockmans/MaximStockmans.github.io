@@ -1,7 +1,8 @@
 function makeList() {
     // Establish the array which acts as a data source for the list
     let listData = [
-        ['project1.html','CNC with Arduino (Python, C++)','images/image-placeholder.png']
+        ['project1.html','CNC with Arduino (Python, C++)','images/image-placeholder.png'],
+        ['project2.html','Earth2 Bot using Selenium (Java)','images/image-placeholder.png']
     ];
     let numberOfListItems = listData.length;
     let element = document.getElementById('projectsRow');
