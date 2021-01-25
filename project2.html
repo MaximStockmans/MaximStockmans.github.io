@@ -33,13 +33,13 @@
             <div class="col-md-6 centerH">
                 January 2021 <br><br>
                 A marketplace bot for the popular game Earth2.io. The application had quite an amount of drastic changes because of the fast-developing game and mechanics. So for a further explenation I willsubdivide them in different versions.<br><br><br>
-                <strong>Version 3</strong>
+                <strong>Version 3</strong><br>
                 Since the developers of Earth2.io almost made it impossible for people to scam on the marketplace by placing a 10-minute timer on changing the price of a property, my bot made close to no income. This caused me to explore a different path. Instead of purchasing based on a set treshold I implemented marketplace logic. Since this version I no longer work with regex for deciding what to buy. I first converted the json response to a HashMap with all the important values. I based my decision on this information by calculating the price against the new tile price.
-                <strong>Version 2</strong>
+                <br><br><strong>Version 2</strong><br>
                 The development team of Earth2.io changed their database, so my query and application had to adapt. Instead of querying for the X amount of cheapest offers I had to specify a country code. I explored a few methods for doing this, iterating over each country. Working with a union of all the query results. And lastly, starting a seperate thread for each query. The last was the most viable, since no hard calculations were made in the threads.
-                <strong>Version 1</strong>
+                <br><br><strong>Version 1</strong><br>
                 The marketplace monitoring was now being done by sending a query directly to their database. This was a graphQL database, that gave a json response, which the application quickly filtered by using a regex string. This was done because of a current scam that was 'trending'. People quickly sold properties for $0.01 and almost instantly changed it to a value over it's market value. By writing my bot faster then they were able to change the price I could always grab every property for $0.01. This was both profitable for me, and extremely good for other players, since almost all scam-offers were bought before anyone fell pray to a scammer.
-                <strong>Version 0</strong>
+                <br><br><strong>Version 0</strong><br>
                 Basic marketplace monitor that scraped the marketplace offers in a browser window. Bought everything that was priced under a threshold which was set in advance. This was viable since the Earth2.io app had an inbrowser marketplace filter to sort on price, and every country was still visable in 1 list.
         </div>
         <div class="col-md-3"></div>
