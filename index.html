@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Webpage description goes here" />
+    <meta charset="utf-8">
+    <title>Change_me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div id="tsparticles">
+</div>
+
+<div id="content">
+    <div id="top">
+        <h1>maxim stockmans</h1>
+    </div>
+    <div id="center">
+        <div>
+            <h2>Full Stack Software Engineer &</h2>
+            <h2>Computer Science Student</h2>
+        </div>
+        <button>Get in touch!</button>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2.6.0/tsparticles.engine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-interaction-particles-links@2.6.0/tsparticles.interaction.particles.links.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-move-base@2.6.0/tsparticles.move.base.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-circle@2.6.0/tsparticles.shape.circle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-color@2.6.0/tsparticles.updater.color.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-opacity@2.6.0/tsparticles.updater.opacity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-out-modes@2.6.0/tsparticles.updater.out-modes.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-updater-size@2.6.0/tsparticles.updater.size.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.6.0/tsparticles.preset.links.min.js"></script>
+<script type="text/javascript">
+    (async () => {
+        await loadLinksPreset(tsParticles);
+
+        await tsParticles.load("tsparticles", { preset: "links" });
+    })();
+</script>
+
+</body>
+</html>
