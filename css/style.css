@@ -357,7 +357,8 @@ p {
     /*width: min(100%, 300px);*/
     display: flex;
     flex-direction: row;
-    gap: 3em;
+    gap: 0.5em;
+    color: #d0d0d0;
 }
 
 .work-experience-item-location {
