@@ -37,11 +37,37 @@ h1 {
     margin: 0;
 }
 
-
 @media all and (max-width: 1400px) {
     h1 {
         font-size: 3em;
     }
+}
+
+h3 {
+    /*text-align: center;*/
+    color: black;
+    font-family: "Manrope";
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+h4 {
+    /*text-align: center;*/
+    color: black;
+    font-family: "Manrope";
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    /*text-align: center;*/
+    color: black;
+    font-family: "Manrope";
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0;
 }
 
 #landing {
@@ -209,12 +235,12 @@ h1 {
 }
 
 .link .link__line.line-bottom:after {
-    animation: animation-line-bottom 3.5s forwards infinite;
+    animation: animation-line-bottom 3.5s ease-out infinite;
     /*animation-delay: 4s, 6s;*/
 }
 
 .link .link__line.line-top:after {
-    animation: animation-line-top 3.5s forwards infinite;
+    animation: animation-line-top 3.5s ease-in infinite;
     /*animation-delay: 4s, 6s;*/
 }
 
@@ -289,10 +315,54 @@ h1 {
     margin: auto;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     position: relative;
     z-index: 1;
     width: min(90%, 1400px);
+    gap: 5em;
+}
+
+/*#work-experience > * {*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+/*}*/
+
+#work-experience .work-experience-header h1 {
+    color: black;
+}
+
+.work-experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.work-experience-item {
+    width: 100%;
+    /*height: 100px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.work-experience-item-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.work-experience-item-date {
+    /*width: min(100%, 300px);*/
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.work-experience-item-location {
+    /*width: min(100%, 300px);*/
+}
+.work-experience-item-title {
+
 }
