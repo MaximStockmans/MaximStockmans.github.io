@@ -358,6 +358,7 @@ p {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
+    flex-wrap: wrap;
     color: #d0d0d0;
 }
 
